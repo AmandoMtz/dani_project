@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slider</title>
+    <script type="text/javascript" src="slider.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #ffffff;
+            margin: 0;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<form>
+    <input type="button" value="<<" onClick="retroceder()">
+    <img src="imagen1.png" id="pic" width="900" height="500">
+    <input type="button" value=">>" onClick="avanzar()">
+</form>
+
+</body>
+</html>
